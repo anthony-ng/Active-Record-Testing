@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :skills
+  has_many :ratings
+  has_many :skills, :through => :ratings
 end

@@ -1,3 +1,4 @@
+# 3:50
 ## Overview
 
 In order for you to better understand your competence with ActiveRecord, we've

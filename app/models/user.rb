@@ -2,11 +2,13 @@ class User < ActiveRecord::Base
   has_many :ratings
   has_many :skills, :through => :ratings
 
-  def self.proficiency_for(skill)
-    #take a skill row for input
-    #search for the corresponding rating
-    #set Rating.proficiency = 0
-    #return Rating.proficiency
-    Rating.find_by_skill_id(skill.id).update_attributes(proficiency: 0)
+  def proficiency_for(skill)
+    self.skills.include?(skill)
+  end
+
+  def set_proficiency_for(skill, rank=0)
+    id = self.id
+    rating_user = Rating.where(user_id: id)
+    rating_user.first.proficiency = rank
   end
 end

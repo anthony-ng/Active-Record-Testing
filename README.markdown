@@ -1,11 +1,6 @@
 ## Overview
 
-In order for you to better understand your competence with ActiveRecord, we've
-built a challenge that is purely ActiveRecord. No sinatra, javascript, jquery,
-or anything. Yay!
-
-### Core
-Demonstrate you can create working ruby code from scratch that uses ActiveRecord
+This is a tiny ActiveRecord testing practice demonstrating I can create working ruby code from scratch that uses ActiveRecord
 to model a many to many relationship.
 
 #### Objectives
